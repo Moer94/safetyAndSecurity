@@ -1,3 +1,19 @@
 4.<Keep it simple>: keep the design as simple and small as possible. Complex design increase the likelhood that errors will be made in the implementaion/ configuration and use. Additionally the effert required to achieve an appropriate level of assurance increases dramatically as security mmechanisms become more complex. 
 
-5.default denybase access decisions an permission rather than exclusion. This means that, by default access is denied and the protection scheme identifies conditions under which access is permitted.
+5.<default deny>base access decisions an permission rather than exclusion. This means that, by default access is denied and the protection scheme identifies conditions under which access is permitted.
+
+6.<adhere to the principle of least privilege>: every process should execute with the least set of privileges necessary to complete the job. Any evualated permission should be held for a minimum time. This approach reduces the opportunities an attacker has to execute arbitrary code with evaleted privileges.
+
+7.<Sanitize data sent to othere systems>: Sanitize all data passed to (complex) sybsystems such as command shell, relational databases, and commericial of the shelf(COTS) components.Attackers might be able to invoke unused functionality in these components(e.g. injection attacks such as SQL injection, command injection, CSV injection). This is not then input validation problem because the complex sybsystem being invoked does not know the context in which the call is made.
+
+8.<practice defense in depth>: manage risk with multiple defense strategies, so that if one large of defense turns out to be indequate, another layer of defense can prevent a security flaw from being an exploitable vulnerablity and/or limit the consequences of  a successful exploit. e.g. comibining secure programming techniques with scure runtime enviroments should reduce the likelihood that vulnerabilites remaining in the code of deployment time can be exploited in the operational enviroments.
+
+9.<use effective quality assurance techniques>: for identifying and eliminating vulnerabilites. Fuzz testing, penetration testing, source code audits should all ne incorporated as part of an effective quality assurance program. Independent security reviews can lead to more secure systems. External reviewrs bring and independent perspective (e.g. in identifying and correcting invalid assumptions.)
+
+10.<adopt a secure coding standard>: develop and/or apply a secure coding standard for your target development language and platform.
+
+
+!!Bonus!!
+--------------------------------
+1.<define security requirements>: identify and document security requirements early in SDL and make sure that subsequent development artifacts are evaluated for compliance with those requirements.
+2.<model threats>: use threat modeling to anticipate the threats to which the SW will be subnjected, That involves *identifying key assets *decompossing the application, *identifying and categorizing the threats to each asset or components, *rating the threats based on risk ranking and then *devloping threat mitigation strategies that are *implemented in *designs, code and test cases.
