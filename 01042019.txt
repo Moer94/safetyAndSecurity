@@ -17,3 +17,5 @@
 --------------------------------
 1.<define security requirements>: identify and document security requirements early in SDL and make sure that subsequent development artifacts are evaluated for compliance with those requirements.
 2.<model threats>: use threat modeling to anticipate the threats to which the SW will be subnjected, That involves *identifying key assets *decompossing the application, *identifying and categorizing the threats to each asset or components, *rating the threats based on risk ranking and then *devloping threat mitigation strategies that are *implemented in *designs, code and test cases.
+
+error in 120 in cwe.mitre.org
